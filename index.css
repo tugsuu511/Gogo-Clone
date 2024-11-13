@@ -1,0 +1,146 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+#header {
+    width: 100vw;
+    height: 88.914px;
+    display: flex;
+    justify-content: center;
+    background-color: white
+}
+
+#navbar {
+    height: 38.91px;
+    width: 1180px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between
+}
+
+#navbar-left {
+    height: 38.91px;
+    width: 745.34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-menu-items {
+    font-size: 15px;
+    margin-left: 40px;
+    font-weight: 900;
+
+}
+
+#navbar-right {
+    width: 270.52px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.chevron-down {
+    margin-left: 3px;
+}
+
+.indicater {
+    text-align: right;
+    margin-top: 4px;
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: 900;
+
+}
+
+.sub-menu{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 70px;
+}
+
+.hover-navbar:hover + .sub-menu{
+    display: flex !important ;
+    
+}
+.breakdown{
+    font-size: 18px;
+}
+.sub-menu-2{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 38px;
+}
+
+.hover-navbar:hover + .sub-menu-2{
+    display: flex !important ;
+}
+.sub-menu-3{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 38px;
+    width: 200px;
+}
+
+.hover-navbar:hover + .sub-menu-3{
+    display: flex !important ;
+}
+.sub-menu-4{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 38px;
+    width: 300px;
+}
+
+.hover-navbar:hover + .sub-menu-4{
+    display: flex !important ;
+}
+#footer{
+    width: 100vw;
+    height: 247.65px;
+    background-color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+#footer-section{
+    width: 1100px;
+    height: 147.65px;
+    border: 1px solid red;
+}
+#footer-grid{
+    height: 65.25px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer-grid-right{
+    display: flex;
+    flex-direction: column;
+    width: 804.84px;
+    
+}
+.footer-logo{
+    height: 20px;
+    width: 15px;
+}
+.footer-word{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
