@@ -65,6 +65,7 @@ body {
     display: none;
     position: absolute;
     top: 70px;
+    z-index: 2;
 }
 
 .hover-navbar:hover+.sub-menu {
@@ -82,6 +83,7 @@ body {
     position: absolute;
     top: 45px;
     left: 38px;
+    z-index: 2;
 }
 
 .hover-navbar:hover+.sub-menu-2 {
@@ -95,6 +97,7 @@ body {
     top: 45px;
     left: 38px;
     width: 200px;
+    z-index: 2;
 }
 
 .hover-navbar:hover+.sub-menu-3 {
@@ -108,6 +111,7 @@ body {
     top: 45px;
     left: 38px;
     width: 300px;
+    z-index: 2;
 }
 
 .hover-navbar:hover+.sub-menu-4 {
@@ -162,7 +166,6 @@ body {
 
 #main {
     background-color: black;
-    height: 100vh;
     width: 100vw;
     align-items: center;
     flex-direction: column;
@@ -207,14 +210,15 @@ body {
     border-radius: 50px;
     margin-top: 70px;
     margin-bottom: 5px;
-    
+
 }
 
 .btn:hover {
     width: 93px;
     transition: 1s;
 }
-.btn-2{
+
+.btn-2 {
     border: none;
     display: flex;
     flex-direction: row;
@@ -227,18 +231,21 @@ body {
     margin-top: 10px;
 
 }
+
 .btn-2:hover {
     width: 66px;
     color: white;
     transition: 0.5s;
 
 }
-.btn-2:hover .btn-2-icon{
+
+.btn-2:hover .btn-2-icon {
     rotate: 45deg;
     transition: 0.5s;
     width: 25px;
     height: 28px;
 }
+
 .head-reklam-poster {
     width: 550px;
     height: 385px;
@@ -246,13 +253,15 @@ body {
     overflow: hidden;
     border-radius: 10px;
 }
-.poster-img{
+
+.poster-img {
     width: 550px;
     height: 385px;
     border-radius: 10px;
     scale: 1;
 }
-.poster-img-hide{
+
+.poster-img-hide {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -262,7 +271,8 @@ body {
     left: 0%;
     opacity: 0;
 }
-.hide-text{
+
+.hide-text {
     font-size: 24px;
     position: absolute;
     left: 50%;
@@ -271,20 +281,23 @@ body {
     color: white;
     opacity: 0;
 }
-.head-reklam-poster:hover .poster-img-hide{
+
+.head-reklam-poster:hover .poster-img-hide {
     opacity: 0.3;
     transition: 0.3s;
 }
-.head-reklam-poster:hover .poster-img{
+
+.head-reklam-poster:hover .poster-img {
     scale: 1.1;
     transition: 0.3s;
 }
-.head-reklam-poster:hover .hide-text{
+
+.head-reklam-poster:hover .hide-text {
     opacity: 1;
     transition: 0.3s;
 }
 
-#news{
+#news {
     width: 1100px;
     height: 283px;
     margin-top: 30px;
@@ -292,7 +305,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-.btn-3{
+
+.btn-3 {
     border: none;
     display: flex;
     flex-direction: row;
@@ -303,24 +317,28 @@ body {
     background-color: #f8f8f8;
     border-radius: 50px;
 }
-.news-card{
+
+.news-card {
     height: 263px;
     width: 263.75px;
 }
-.news-card1{
+
+.news-card1 {
     width: 263.75px;
     height: 175px;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
 }
-.news-card-img{
+
+.news-card-img {
     width: 263.75px;
     height: 175px;
     border-radius: 10px;
     scale: 1;
 }
-.news-card-img-hide{
+
+.news-card-img-hide {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -330,7 +348,8 @@ body {
     left: 0%;
     top: 0%;
 }
-.news-card-img-text{
+
+.news-card-img-text {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -340,15 +359,158 @@ body {
     font-size: 16px;
     font-weight: 700;
 }
-.news-card1:hover .news-card-img{
+
+.news-card1:hover .news-card-img {
     scale: 1.1;
     transition: 0.3s;
 }
-.news-card1:hover .news-card-img-hide{
+
+.news-card1:hover .news-card-img-hide {
     opacity: 0.3;
     transition: 0.3s;
 }
-.news-card1:hover .news-card-img-text{
+
+.news-card1:hover .news-card-img-text {
     opacity: 1;
     transition: 0.3s;
+}
+
+#story-section {
+    width: 1100px;
+    height: 280.5px;
+    background-color: white;
+    margin-top: 40px;
+}
+
+#story-card {
+    width: 1100px;
+    height: 235px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story-img {
+    width: 170.8px;
+    height: 235px;
+    border-radius: 8px;
+    scale: 1;
+}
+
+.story-img-container {
+    width: 170.8px;
+    height: 235px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-logo {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.story-img-title {
+    font-size: 13px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    width: 155px;
+    height: 34px;
+    overflow: hidden;
+}
+
+.story-img-container:hover .story-img {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.story-img-container:hover .story-img-title {
+    height: 68px;
+    transition: 0.5s;
+    transform: translateY(-37);
+}
+
+.see-result {
+    height: 22px;
+    width: 150.8px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#latest-news-section {
+    height: 100vh;
+    width: 1100px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+#date-container {
+    height: 61px;
+    width: 713px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.dates {
+    height: 60.87px;
+    width: 103.81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.calendar-text-today {
+    font-size: 20px;
+    color: #b7b6b6;
+}
+
+.calendar-one-day {
+    height: 7px;
+    width: 103.81px;
+    border-radius: 20px;
+    background-color: #efefef;
+}
+
+.calendar-text {
+    font-size: 13px;
+    color: #b7b6b6;
+    text-align: center;
+}
+
+.dates:hover .color-blue {
+    color: #39f;
+    transition: 0.5s
+}
+
+.dates:hover .bg-color-blue {
+    background-color: #39f;
+    transition: 0.5s
+}
+.sub-dates{
+    height: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.sub-dates:hover .color-blue {
+    color: #39f;
+    transition: 0.5s;
+    margin-bottom: 2px;
+  
+}
+
+.sub-dates:hover .bg-color-blue {
+    background-color: #39f;
+    transition: 0.5s;
+    margin-bottom: 2px;
 }
