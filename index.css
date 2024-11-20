@@ -726,9 +726,10 @@ body {
 
 .trend-news:hover {
     transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
+    transition: 0.2s;
 }
-.btn-more{
+
+.btn-more {
     height: 25px;
     background: #f8f8f8;
     border: 1px solid #f2f2f2;
@@ -744,8 +745,156 @@ body {
     justify-content: center;
     margin-top: 20px;
 }
-.btn-more:hover{
+
+.btn-more:hover {
     background-color: white;
     color: #1e87f0;
     transition: 0.3s;
+}
+
+#interview-section {
+    width: 1100px;
+    background-color: white;
+    margin-top: 60px;
+}
+
+.interview-img-container {
+    width: 542px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+
+
+}
+
+.interview-img {
+    width: 542px;
+    height: 500px;
+    object-fit: cover;
+    scale: 1;
+
+}
+
+.interview-img-text {
+    width: 482px;
+    height: 130px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+}
+
+.interview-main-category {
+    width: 42.6px;
+    height: 26px;
+    background-color: #407ce8;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interview-main-title {
+    color: white;
+}
+
+.imt-more {
+    color: white;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.interview-img-container:hover .interview-img {
+    scale: 1.1;
+    transition: all 0.3s ease-in-out
+}
+
+.sub-interview-img-container {
+    width: 263.75px;
+    height: 243px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sub-interview-img {
+    width: 263.75px;
+    height: 243px;
+    object-fit: cover;
+    scale: 1;
+}
+
+.sub-interview-main-category {
+    width: 72.6px;
+    height: 26px;
+    background-color: #407ce8;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-interview-img-text {
+    width: 223px;
+    height: 73px;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    overflow: hidden;
+}
+.sub-interview-img-container:hover .sub-interview-img-text{
+    height: 100px;
+    transition: 0.5s;
+    transform: translateY(-37);
+}
+.sub-interview-img-container:hover .sub-interview-img{
+    scale: 1.1;
+    transition: 0.5s;
+}
+#info-section{
+    margin-top: 60px;
+    width: 1100px;
+    background-color: white;
+
+}
+.info-slide{
+    width: 1100px;
+    height: 360px;
+    border: 1px solid red;
+}
+.info-slide-img-container{
+    height: 230px;
+    width: 263.75px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.info-slide-img{
+    height: 230px;
+    width: 263.75px;
+    object-fit: cover;
+}
+.info-slide-img-hide{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+.info-slide-img-text{
+    position: absolute;
+    color: white;
+    top: 45%;
+    left: 37%;
+    opacity: 1;
 }
